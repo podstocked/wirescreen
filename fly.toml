@@ -1,5 +1,7 @@
+app = "wirescreen"
 kill_signal = "SIGINT"
 kill_timeout = 5
+primary_region = "ewr"
 processes = []
 
 [experimental]
@@ -11,7 +13,7 @@ processes = []
   protocol = "tcp"
 
   [[services.ports]]
-    port = 80
+    port = 8080
 
   [[services.ports]]
     handlers = ["tls"]
